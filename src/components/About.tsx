@@ -16,7 +16,7 @@ export default function About() {
           {/* Image */}
           <div className="relative aspect-square overflow-hidden rounded-sm border border-white/10">
             <Image
-              src="/images/image_1.jpg"
+              src="/images/people.webp"
               alt="Innovative Electric team"
               fill
               className="object-cover"
