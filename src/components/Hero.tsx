@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-end pb-24 pt-16">
       {/* Background Image */}
       <Image
-        src="/images/image_1.jpg"
+        src="/images/hero.jpg"
         alt="Electrical work by Innovative Electric"
         fill
         className="object-cover"
