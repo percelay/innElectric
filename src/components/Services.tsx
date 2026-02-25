@@ -55,27 +55,27 @@ export default function Services() {
               ))}
             </ul>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-white/10">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-black/10">
             <Image
               src="/images/image_2.jpg"
               alt="Generator installation by Innovative Electric"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-bg/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
         </div>
 
         {/* Residential Feature */}
         <div className="mb-24 grid gap-12 lg:grid-cols-2 items-center">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-white/10 lg:order-1">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-black/10 lg:order-1">
             <Image
               src="/images/2025-02-03.webp"
               alt="Residential electrical wiring by Innovative Electric"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-bg/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
           <div className="lg:order-2">
             <span className="text-xs font-bold tracking-widest text-primary uppercase">
@@ -137,14 +137,14 @@ export default function Services() {
               ))}
             </ul>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-white/10">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-black/10">
             <Image
               src="/images/unnamed (2).webp"
               alt="Commercial electrical work by Innovative Electric"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-bg/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
         </div>
 
@@ -153,7 +153,7 @@ export default function Services() {
           {supportCards.map((service) => (
             <div
               key={service.title}
-              className="group rounded-sm border border-white/10 bg-bg p-8 transition-all duration-300 hover:border-primary/30 hover:bg-bg/80"
+              className="group rounded-sm border border-black/10 bg-bg p-8 transition-all duration-300 hover:border-primary/30 hover:bg-bg/80"
             >
               <service.icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />
               <h3 className="mt-5 text-lg font-bold text-text-main transition-colors duration-200 group-hover:text-primary">

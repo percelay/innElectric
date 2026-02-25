@@ -14,14 +14,14 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           {/* Image */}
-          <div className="relative aspect-square overflow-hidden rounded-sm border border-white/10">
+          <div className="relative aspect-square overflow-hidden rounded-sm border border-black/10">
             <Image
               src="/images/people.webp"
               alt="Innovative Electric team"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
 
           {/* Content */}

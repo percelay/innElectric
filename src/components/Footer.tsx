@@ -3,14 +3,19 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-surface py-16">
+    <footer className="border-t border-black/10 bg-surface py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <Link href="#home" className="flex items-center gap-2">
-              <Zap className="h-6 w-6 text-primary" />
-              <span className="text-lg font-bold text-text-main">Innovative Electric</span>
+            <Link href="#home" className="flex items-center gap-3">
+              <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-primary">
+                <Zap className="h-4 w-4 fill-white text-white" />
+              </div>
+              <div className="flex flex-col leading-none gap-0.5">
+                <span className="text-[9px] font-bold tracking-[0.25em] text-primary uppercase">Innovative</span>
+                <span className="text-[14px] font-black tracking-wider text-text-main uppercase">Electric</span>
+              </div>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-text-muted">
               Expert electrical solutions for residential, commercial, and industrial needs across
@@ -79,7 +84,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-8 text-center">
+        <div className="mt-12 border-t border-black/10 pt-8 text-center">
           <p className="text-xs text-text-muted">
             &copy; {new Date().getFullYear()} Innovative Electric Services Inc. All rights reserved.
           </p>

@@ -15,7 +15,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-bg/80 backdrop-blur-md border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-bg/80 backdrop-blur-md border-b border-black/10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -46,7 +46,7 @@ export default function Navbar() {
             ))}
             <Link
               href="#contact"
-              className="rounded-sm bg-primary px-5 py-2 text-sm font-bold text-bg transition-all duration-200 hover:bg-white hover:text-bg"
+              className="rounded-sm bg-primary px-5 py-2 text-sm font-bold text-white transition-all duration-200 hover:opacity-90"
             >
               Free Estimate
             </Link>
@@ -65,13 +65,13 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-bg/95 backdrop-blur-md border-t border-white/10 px-4 pb-4">
+        <div className="md:hidden bg-bg/95 backdrop-blur-md border-t border-black/10 px-4 pb-4">
           {navLinks.map((link) => (
             <Link
               key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block py-3 text-sm font-medium text-text-muted transition-colors duration-200 hover:text-primary border-b border-white/5"
+              className="block py-3 text-sm font-medium text-text-muted transition-colors duration-200 hover:text-primary border-b border-black/5"
             >
               {link.label}
             </Link>
@@ -79,7 +79,7 @@ export default function Navbar() {
           <Link
             href="#contact"
             onClick={() => setMobileOpen(false)}
-            className="mt-3 block rounded-sm bg-primary px-5 py-2.5 text-center text-sm font-bold text-bg transition-all duration-200 hover:bg-white"
+            className="mt-3 block rounded-sm bg-primary px-5 py-2.5 text-center text-sm font-bold text-white transition-all duration-200 hover:opacity-90"
           >
             Free Estimate
           </Link>

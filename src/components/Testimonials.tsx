@@ -54,7 +54,7 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="rounded-sm border border-white/10 bg-bg p-6 transition-all duration-300 hover:border-primary/30"
+              className="rounded-sm border border-black/10 bg-bg p-6 transition-all duration-300 hover:border-primary/30"
             >
               <div className="flex gap-1">
                 {Array.from({ length: t.rating }).map((_, i) => (
@@ -72,7 +72,7 @@ export default function Testimonials() {
             href="https://share.google/vWCgvd6j9mYbRECxz"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors duration-200 hover:text-white"
+            className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors duration-200 hover:text-text-main"
           >
             See all reviews on Google
             <span aria-hidden="true">&rarr;</span>

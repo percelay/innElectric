@@ -28,7 +28,7 @@ export default function Contact() {
           {team.map((member) => (
             <div
               key={member.name}
-              className="rounded-sm border border-white/10 bg-surface p-8 text-center transition-all duration-300 hover:border-primary/30"
+              className="rounded-sm border border-black/10 bg-surface p-8 text-center transition-all duration-300 hover:border-primary/30"
             >
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 border border-primary/20">
                 <User className="h-7 w-7 text-primary" />
@@ -47,7 +47,7 @@ export default function Contact() {
         </div>
 
         {/* Info Bar */}
-        <div className="mt-12 grid gap-6 rounded-sm border border-white/10 bg-surface p-8 sm:grid-cols-3">
+        <div className="mt-12 grid gap-6 rounded-sm border border-black/10 bg-surface p-8 sm:grid-cols-3">
           <div className="flex items-start gap-4">
             <Phone className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
             <div>
@@ -82,7 +82,7 @@ export default function Contact() {
         <div className="mt-12 text-center">
           <Link
             href="tel:2084763321"
-            className="inline-flex items-center gap-2 rounded-sm bg-primary px-10 py-4 text-lg font-bold text-bg transition-all duration-200 hover:bg-white hover:text-bg hover:scale-105"
+            className="inline-flex items-center gap-2 rounded-sm bg-primary px-10 py-4 text-lg font-bold text-white transition-all duration-200 hover:opacity-90 hover:scale-105"
           >
             <Phone className="h-5 w-5" />
             Call for a Free Estimate
