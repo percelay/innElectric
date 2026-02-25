@@ -19,11 +19,18 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="#home" className="flex items-center gap-2 group">
-            <Zap className="h-7 w-7 text-primary transition-transform duration-300 group-hover:scale-110" />
-            <span className="text-lg font-bold tracking-tight text-text-main">
-              Innovative Electric
-            </span>
+          <Link href="#home" className="flex items-center gap-3 group">
+            <div className="flex h-9 w-9 items-center justify-center rounded-sm bg-primary transition-all duration-300 group-hover:brightness-110">
+              <Zap className="h-5 w-5 fill-bg text-bg" />
+            </div>
+            <div className="flex flex-col leading-none gap-0.5">
+              <span className="text-[9px] font-bold tracking-[0.25em] text-primary uppercase">
+                Innovative
+              </span>
+              <span className="text-[15px] font-black tracking-wider text-text-main uppercase">
+                Electric
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Links */}
